@@ -13,4 +13,7 @@ def draw():
     screen.blit(images.astronaught, (player_x, player_y))
 
 def game_loop():
+    global player_x, player_y
+    if keyboard.right:
+        player_x += 5
     
