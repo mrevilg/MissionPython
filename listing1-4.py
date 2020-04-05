@@ -16,4 +16,12 @@ def game_loop():
     global player_x, player_y
     if keyboard.right:
         player_x += 5
+    elif keyboard.left:
+        player_x -= 5
+    elif keyboard.up:
+        player_y -= 5
+    elif keyboard.down:
+        player_y += 5
+
+clock.schedule_interval(game_loop, 0.03)
     
