@@ -26,3 +26,11 @@ GAME_MAP = [ ["Room 0 - where unused objects are kept", 0, 0, False, False] ]
 outdoor_rooms = range(1, 26)
 for planetsectors in range(1, 26): 
     GAME_MAP.append( ["The dusty planet surface", 13, 13, True, True] )
+
+GAME_MAP += [
+    #["Room Name", height, width, top exit?, right exit?]
+    ["The airlock", 13, 5 True, False], # room 26
+    ["The engineering lab", 13, 13, False, False] # room 27
+
+
+]
