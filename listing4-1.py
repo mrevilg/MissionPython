@@ -28,9 +28,9 @@ for planetsectors in range(1, 26):
     GAME_MAP.append( ["The dusty planet surface", 13, 13, True, True] )
 
 GAME_MAP += [
-    #["Room Name", height, width, top exit?, right exit?]
-    ["The airlock", 13, 5 True, False], # room 26
+    #["Room Name", height, width, top exit?, right exit?] 
+    ["The airlock", 13, 5 True, False] # room 26
     ["The engineering lab", 13, 13, False, False] # room 27
-
-
+    ["Poodle Mission Control", 9, 13, False, True] # room 28
+    ["The viewing gallery", 9, 15, False, False] # room 29
 ]
