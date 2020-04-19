@@ -29,8 +29,13 @@ for planetsectors in range(1, 26):
 
 GAME_MAP += [
     #["Room Name", height, width, top exit?, right exit?] 
-    ["The airlock", 13, 5 True, False] # room 26
-    ["The engineering lab", 13, 13, False, False] # room 27
-    ["Poodle Mission Control", 9, 13, False, True] # room 28
-    ["The viewing gallery", 9, 15, False, False] # room 29
+    ["The airlock", 13, 5, True, False], # room 26
+    ["The engineering lab", 13, 13, False, False], # room 27
+    ["Poodle Mission Control", 9, 13, False, True], # room 28
+    ["The viewing gallery", 9, 15, False, False], # room 29
+    ["The crew's bathroom", 5, 5, False, False], # room 30
+    
 ]
+
+# sanity check on the map data
+assert len(GAME_MAP)-1 == MAP_SIZE, "Map size and GAME_MAP don't match"
