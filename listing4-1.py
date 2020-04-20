@@ -34,6 +34,7 @@ GAME_MAP += [
     ["Poodle Mission Control", 9, 13, False, True], # room 28
     ["The viewing gallery", 9, 15, False, False], # room 29
     ["The crew's bathroom", 5, 5, False, False], # room 30
+    ["The airlock entry bay", 7, 11, True, True], # room 31
     
 ]
 
