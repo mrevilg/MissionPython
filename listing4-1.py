@@ -36,6 +36,7 @@ GAME_MAP += [
     ["The crew's bathroom", 5, 5, False, False], # room 30
     ["The airlock entry bay", 7, 11, True, True], # room 31
     ["Left elbow room", 9, 7, True, False], # room 32
+    ["Right elbow room", 7, 13, True, True], # room 33
     
 ]
 
