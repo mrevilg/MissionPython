@@ -38,6 +38,7 @@ GAME_MAP += [
     ["Left elbow room", 9, 7, True, False], # room 32
     ["Right elbow room", 7, 13, True, True], # room 33
     ["The science lab", 13, 13, False, True], # room 34
+    ["The greenhouse", 13, 13, True, False], # room 35
     
 ]
 
