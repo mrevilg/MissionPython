@@ -40,6 +40,7 @@ GAME_MAP += [
     ["The science lab", 13, 13, False, True], # room 34
     ["The greenhouse", 13, 13, True, False], # room 35
     [PLAYER_NAME + "'s sleeping quaters", 9, 11, False, False], # room 36
+    ["West corridor", 15, 5, True, True], # room 37
     
 ]
 
