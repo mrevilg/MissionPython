@@ -42,6 +42,7 @@ GAME_MAP += [
     [PLAYER_NAME + "'s sleeping quaters", 9, 11, False, False], # room 36
     ["West corridor", 15, 5, True, True], # room 37
     ["The briefing room", 7, 13, False, True], # room 38
+    ["The crew's community room", 11, 13, True, False], # room 39
     
 ]
 
