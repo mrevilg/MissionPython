@@ -43,6 +43,7 @@ GAME_MAP += [
     ["West corridor", 15, 5, True, True], # room 37
     ["The briefing room", 7, 13, False, True], # room 38
     ["The crew's community room", 11, 13, True, False], # room 39
+    ["Main Mission Control", 14, 14, False, False], # room 40
     
 ]
 
