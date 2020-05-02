@@ -46,6 +46,8 @@ GAME_MAP += [
     ["Main Mission Control", 14, 14, False, False], # room 40
     ["The sick bay", 12, 7, True, False], # room 41
     ["West corridor", 9, 7, True, False], # room 42
+    ["Utilities control room", 9, 9, False, True], # room 43
+    ["Systems engineering bay", 9, 11, False, False], # room 44
     
 ]
 
