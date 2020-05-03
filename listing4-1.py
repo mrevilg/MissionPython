@@ -48,7 +48,10 @@ GAME_MAP += [
     ["West corridor", 9, 7, True, False], # room 42
     ["Utilities control room", 9, 9, False, True], # room 43
     ["Systems engineering bay", 9, 11, False, False], # room 44
-    
+    ["Security portal to Mission Control", 7, 7, True, False], # room 45
+    [FRIEND1_NAME + "'s sleeping quaters", 9, 11, True, True], # room 46
+    [FRIEND2_NAME + "'s sleeping quaters", 9, 11, True, True], # room 47
+        
 ]
 
 # sanity check on the map data
