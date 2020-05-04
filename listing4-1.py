@@ -51,8 +51,10 @@ GAME_MAP += [
     ["Security portal to Mission Control", 7, 7, True, False], # room 45
     [FRIEND1_NAME + "'s sleeping quaters", 9, 11, True, True], # room 46
     [FRIEND2_NAME + "'s sleeping quaters", 9, 11, True, True], # room 47
-        
-]
+    ["The pipeworks", 13, 11, True, False], # room 48
+    ["The chief scientist's office", 9, 7, True, True], # room 49
+    ["The robot workshop", 9, 11, True, False], # room 50
+    ]
 
 # sanity check on the map data
 assert len(GAME_MAP)-1 == MAP_SIZE, "Map size and GAME_MAP don't match"
