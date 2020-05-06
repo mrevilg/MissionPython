@@ -60,3 +60,9 @@ GAME_MAP += [
 assert len(GAME_MAP)-1 == MAP_SIZE, "Map size and GAME_MAP don't match"
 
 ## MAKE MAP ##
+
+def get_floor_type():
+    if current_room in outdoor_rooms:
+        return 2 # soil
+    else:
+        return 0 # tiled floor
