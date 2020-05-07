@@ -66,3 +66,9 @@ def get_floor_type():
         return 2 # soil
     else:
         return 0 # tiled floor
+
+def generate_map():
+# This makes the map of the current room,
+# using room, scenery, and prop data.
+    global room_map, room_width, room_height, room name, hazard_map
+    global top_left_x, top_left_y, wall_transparency_frame
