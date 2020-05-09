@@ -74,3 +74,8 @@ def generate_map(): # This makes the map of the current room using room, scenery
     room_name = room_data[0]
     room_height = room_data[1]
     room_width = room_data[2]
+
+    floor_type = get_floor_type()
+    if current_room in range(1, 21):
+        bottom_edge = 2 # soil
+        side_edge = 2 # soil
