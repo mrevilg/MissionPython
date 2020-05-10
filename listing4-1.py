@@ -58,3 +58,24 @@ GAME_MAP += [
 
 # sanity check on the map data
 assert len(GAME_MAP)-1 == MAP_SIZE, "Map size and GAME_MAP don't match"
+
+## MAKE MAP ##
+
+def get_floor_type():
+    if current_room in outdoor_rooms:
+        return 2 # soil
+    else:
+        return 0 # tiled floor
+
+def generate_map(): # This makes the map of the current room using room, scenery, and prop data.
+    global room_map, room_width, room_height, room_name, hazard_map
+    global top_left_x, top_left_y, wall_transparency_frame
+    room_data = GAME_MAP[current_room]
+    room_name = room_data[0]
+    room_height = room_data[1]
+    room_width = room_data[2]
+
+    floor_type = get_floor_type()
+    if current_room in range(1, 21):
+        bottom_edge = 2 # soil
+        side_edge = 2 # soil
