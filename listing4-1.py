@@ -79,3 +79,6 @@ def generate_map(): # This makes the map of the current room using room, scenery
     if current_room in range(1, 21):
         bottom_edge = 2 # soil
         side_edge = 2 # soil
+    if current_room in range(21, 26):
+        bottom_edge = 1 # wall
+        side_edge = 2 # soil
