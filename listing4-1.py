@@ -85,3 +85,6 @@ def generate_map(): # This makes the map of the current room using room, scenery
     if current_room > 25:
         bottom_edge = 1 # wall
         side_edge = 1 # wall
+
+    # Create top line of room map
+    room_map=[[side_edge] * room_width]
