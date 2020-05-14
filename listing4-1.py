@@ -88,3 +88,6 @@ def generate_map(): # This makes the map of the current room using room, scenery
 
     # Create top line of room map
     room_map=[[side_edge] * room_width]
+    # Add lines
+    for y in range(room_height - 2):
+        room_map.append([side_edge] + [floor_type]*(room_width - 2) + [side_edge])
