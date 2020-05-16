@@ -95,3 +95,5 @@ def generate_map(): # This makes the map of the current room using room, scenery
     room_map.append([bottom_edge] * room_width)
 
     # Add doorways
+    middle_row = int(room_height / 2)
+    middle_column = int(room_width / 2)
