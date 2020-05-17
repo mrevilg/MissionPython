@@ -97,3 +97,8 @@ def generate_map(): # This makes the map of the current room using room, scenery
     # Add doorways
     middle_row = int(room_height / 2)
     middle_column = int(room_width / 2)
+
+    if room_data[4]: # If exit at right of this room
+        room_map[middle_row][room_width - 1] = floor_type
+        room_map[middle_row+1][room_width - 1] = floor_type
+        room_map[middle_row-1][room_width - 1] = floor_type
