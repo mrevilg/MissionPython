@@ -102,3 +102,6 @@ def generate_map(): # This makes the map of the current room using room, scenery
         room_map[middle_row][room_width - 1] = floor_type
         room_map[middle_row+1][room_width - 1] = floor_type
         room_map[middle_row-1][room_width - 1] = floor_type
+    
+    if current_room % MAP_WIDTH != 1:
+        room_to_left = GAME_MAP[current_room - 1]
