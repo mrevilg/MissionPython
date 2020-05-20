@@ -109,3 +109,8 @@ def generate_map(): # This makes the map of the current room using room, scenery
             room_map[middle_row][0] = floor_type
             room_map[middle_row + 1][0] = floor_type
             room_map[middle_row - 1][0] = floor_type
+
+    if room_data[3]: # if room has exit at top
+        room_map[0][middle_column] = floor_type
+        room_map[0][middle_column + 1] = floor_type
+        room_map[0][middle_column - 1] = floor_type
