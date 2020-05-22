@@ -119,4 +119,7 @@ def generate_map(): # This makes the map of the current room using room, scenery
         room_below = GAME_MAP[current_room+MAP_WIDTH]
         # If room below has top exit, add bottom exit to this room
         if room_below[3]:
+            room_map[room_height-1][middle_column] = floor_type
+            room_map[room_height-1][middle_column + 1] = floor_type
+            room_map[room_height-1][middle_column - 1] = floor_type
             
