@@ -129,3 +129,9 @@ def draw():
     global room_height, room_width, room_map
     generate_map()
     screen.clear()
+
+    for y in range(room_height):
+        for x in range(room_width):
+            image_to_draw = DEMO_OBJECTS[room_map[y][x]]
+            screen.blit(image_to_draw,(top_left_x + (x*30),
+             top_left_y + (y*30) - image_to_draw.pygame.font.get_height()))
