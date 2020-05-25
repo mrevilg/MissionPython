@@ -135,3 +135,10 @@ def draw():
             image_to_draw = DEMO_OBJECTS[room_map[y][x]]
             screen.blit(image_to_draw,(top_left_x + (x*30),
              top_left_y + (y*30) - image_to_draw.pygame.font.get_height()))
+
+def movement():
+    global current_room
+    old_room = current_room
+
+    if keydoard.left:
+        current_room -= 1
