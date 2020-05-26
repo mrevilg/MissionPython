@@ -142,3 +142,9 @@ def movement():
 
     if keydoard.left:
         current_room -= 1
+    if keydoard.right:
+        current_room += 1
+    if keydoard.up:
+        current_room -= MAP_WIDTH
+    if keydoard.down:
+        current_room += MAP_WIDTH
