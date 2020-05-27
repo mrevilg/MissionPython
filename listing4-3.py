@@ -148,3 +148,8 @@ def movement():
         current_room -= MAP_WIDTH
     if keydoard.down:
         current_room += MAP_WIDTH
+
+    if current_room > 50:
+        current_room = 50
+    if current_room < 1:
+        current_room = 1
