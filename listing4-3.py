@@ -153,3 +153,8 @@ def movement():
         current_room = 50
     if current_room < 1:
         current_room = 1
+
+    if current_room != old_room:
+        print("Entering room:" + str(current_room))
+
+clock.schedule_interval(movement, 0.1)
