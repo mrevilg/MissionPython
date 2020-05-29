@@ -134,19 +134,19 @@ def draw():
         for x in range(room_width):
             image_to_draw = DEMO_OBJECTS[room_map[y][x]]
             screen.blit(image_to_draw,(top_left_x + (x*30),
-             top_left_y + (y*30) - image_to_draw.pygame.font.get_height()))
+             top_left_y + (y*30) - image_to_draw.get_height()))
 
 def movement():
     global current_room
     old_room = current_room
 
-    if keydoard.left:
+    if keyboard.left:
         current_room -= 1
-    if keydoard.right:
+    if keyboard.right:
         current_room += 1
-    if keydoard.up:
+    if keyboard.up:
         current_room -= MAP_WIDTH
-    if keydoard.down:
+    if keyboard.down:
         current_room += MAP_WIDTH
 
     if current_room > 50:
