@@ -17,6 +17,8 @@ top_left_y = 150
 DEMO_OBJECTS = [images.floor, images.pillar, images.soil]
 
 LANDER_SECTOR = random.randint(1, 24)
+LANDER_X = random.randint(2, 11)
+LANDER_Y = random.randint(2, 11)
 
 ## MAP ##
 
