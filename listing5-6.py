@@ -68,7 +68,7 @@ assert len(GAME_MAP)-1 == MAP_SIZE, "Map size and GAME_MAP don't match"
 objects = {
     0: [images.floor, None, "The floor is shiny and clean"],
     1: [images.pillar, images.full_shadow, "The wall is smooth and cold"],
-    2: []
+    2: [images.soil, None, "It's like a desert. Or should that be dessert?"],
     3: []
     4: []
     5: []
