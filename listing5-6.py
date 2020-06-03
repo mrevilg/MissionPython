@@ -71,7 +71,7 @@ objects = {
     2: [images.soil, None, "It's like a desert. Or should that be dessert?"],
     3: [images.pillar_low, images.half_shadow, "The wall is smooth and cold"],
     4: [images.bed, images.half_shadow, "A tidy and comfrotable bed"],
-    5: []
+    5: [images.table, images.half_shadow, "It's made from strong plastic"],
     6: []
     7: []
     8: []
