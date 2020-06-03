@@ -70,7 +70,7 @@ objects = {
     1: [images.pillar, images.full_shadow, "The wall is smooth and cold"],
     2: [images.soil, None, "It's like a desert. Or should that be dessert?"],
     3: [images.pillar_low, images.half_shadow, "The wall is smooth and cold"],
-    4: []
+    4: [images.bed, images.half_shadow, "A tidy and comfrotable bed"],
     5: []
     6: []
     7: []
