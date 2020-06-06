@@ -156,7 +156,7 @@ def draw():
 
     for y in range(room_height):
         for x in range(room_width):
-            image_to_draw = objects[room_map[y][x][0]]
+            image_to_draw = objects[room_map[y][x][0]
             screen.blit(image_to_draw,(top_left_x + (x*30),
              top_left_y + (y*30) - image_to_draw.get_height()))
 
