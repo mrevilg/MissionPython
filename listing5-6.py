@@ -75,7 +75,7 @@ objects = {
     6: [images.chair_left, None, "A chair with a soft cushion"],
     7: [images.chair_right, None, "A chair with a soft cushion"],
     8: [images.bookcase_tall, images.full_shadow, "Bookshelves, stacked with reference books"],
-    9: []
+    9: [images.bookcase_small, images.half_shadow, "Bookshelves, stacked with reference books"],
     10: []
     11: []
     12: []
