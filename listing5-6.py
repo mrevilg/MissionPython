@@ -78,7 +78,7 @@ objects = {
     9: [images.bookcase_small, images.half_shadow, "Bookshelves, stacked with reference books"],
     10: [images.cabinet, images.half_shadow, "A small locker, for storing personal items"],
     11: [images.desk_computer, images.half_shadow, "A compuer. Use it to run life support diagnostics"],
-    12: []
+    12: [images.plant, images.plant_shadow, "A spaceberry plant, grown here"]
 }
 
 
