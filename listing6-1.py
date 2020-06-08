@@ -261,6 +261,7 @@ scenery = {
 }
 
 checksum = 0
+check_counter = 0
 
 ## MAKE MAP ##
 
