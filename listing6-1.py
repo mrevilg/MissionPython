@@ -267,6 +267,9 @@ for key, room_scenery_list in scenery.items():
           checksum += (scenery_item_list[0] * key
           + scenery_item_list[1] * (key + 1)
           + scenery_item_list[2] * (key + 2))
+          check_counter +=1
+print(check_counter, "scenery items")
+assert check_counter == 161, "Expected 161 scenery items"
 
 ## MAKE MAP ##
 
