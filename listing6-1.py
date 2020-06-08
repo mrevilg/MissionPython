@@ -262,6 +262,9 @@ scenery = {
 
 checksum = 0
 check_counter = 0
+for key, room_scenery_list in scenery.items():
+     for scenery_item_list in room_scenery_list:
+          
 
 ## MAKE MAP ##
 
