@@ -264,7 +264,9 @@ checksum = 0
 check_counter = 0
 for key, room_scenery_list in scenery.items():
      for scenery_item_list in room_scenery_list:
-          
+          checksum += (scenery_item_list[0] * key
+          + scenery_item_list[1] * (key + 1)
+          + scenery_item_list[2] * (key + 2))
 
 ## MAKE MAP ##
 
