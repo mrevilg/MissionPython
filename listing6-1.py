@@ -270,6 +270,8 @@ for key, room_scenery_list in scenery.items():
           check_counter +=1
 print(check_counter, "scenery items")
 assert check_counter == 161, "Expected 161 scenery items"
+assert checksum == 200095, "Error in scenery data"
+print("Scenery checksum: " + str(checksum))
 
 ## MAKE MAP ##
 
