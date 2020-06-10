@@ -279,6 +279,15 @@ for room in range(1, 26): # random planet sceney locations
         scenery[room] = [[scenery_item, random.randint(2, 10), 
         random.randint(2, 10)]]
 
+# Use loops for planet surface room fencing
+for room_coordinate in range(0, 13):
+     for room_number in [1, 2, 3, 4, 5]: # Add top fence
+          scenery[room_number] += [[31, 0, room_coordinate]]
+     for room_number in [1, 6, 11, 16, 21]: # Add left fence
+          scenery[room_number] += [[31, room_coordinate, 0]]
+     for room_number in [5, 10, 15, 20, 25]: # Add right fence
+          scenery[room_number] += [[31, room_coordinate, 12]]
+
 ## MAKE MAP ##
 
 def get_floor_type():
