@@ -288,6 +288,9 @@ for room_coordinate in range(0, 13):
      for room_number in [5, 10, 15, 20, 25]: # Add right fence
           scenery[room_number] += [[31, room_coordinate, 12]]
 
+del scenery[21][-1] # Delete last fence panel in Rm 21 
+del scenery[25][-1] # Delete last fence panel in Rm 25 
+
 ## MAKE MAP ##
 
 def get_floor_type():
