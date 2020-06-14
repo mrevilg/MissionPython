@@ -358,6 +358,8 @@ def generate_map(): # This makes the map of the current room using room, scenery
             room_map[room_height-1][middle_column - 1] = floor_type
 
     if current_room in scenery:
+        for this_scenery in scenery[current_room]:
+            
 
         
 ## Explorer ##
