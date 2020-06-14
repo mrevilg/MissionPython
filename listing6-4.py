@@ -362,6 +362,7 @@ def generate_map(): # This makes the map of the current room using room, scenery
             scenery_number = this_scenery[0]
             scenery_y = this_scenery[1]
             scenery_x = this_scenery[2]
+            room_map[scenery_y][scenery_x] = scenery_number
 
         
 ## Explorer ##
