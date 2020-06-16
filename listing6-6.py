@@ -369,7 +369,7 @@ def generate_map(): # This makes the map of the current room using room, scenery
             image_width_in_tiles = int(image_width / TILE_SIZE)
 
             for tile_number in range(1, image_width_in_tiles):
-                room_map[scenery_y][scenery_x + tile_number] 255
+                room_map[scenery_y][scenery_x + tile_number] = 255
 
         
 ## Explorer ##
