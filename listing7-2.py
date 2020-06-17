@@ -47,6 +47,7 @@ PLAYER = {
 player_direction = "down"
 player_frame = 0
 player_image = PLAYER[player_direction][player_frame]
+player_offset_x, player_offset_y = 0, 0
 
 ## MAP ##
 
