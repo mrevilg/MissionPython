@@ -44,7 +44,9 @@ PLAYER = {
              ]
 }
 
-
+player_direction = "down"
+player_frame = 0
+player_image = PLAYER[player_direction][player_frame]
 
 ## MAP ##
 
