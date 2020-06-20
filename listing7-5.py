@@ -420,8 +420,8 @@ def game_loop():
             player_offset_y = 0
 
 # save player's current position
-     old_player_x = player_x
-     old_player_y = player_y
+    old_player_x = player_x
+    old_player_y = player_y
 
 # move if key is pressed
     if player_frame == 0:
