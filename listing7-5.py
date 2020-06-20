@@ -457,9 +457,6 @@ def game_loop():
         player_y = old_player_y
         player_frame = 0
 
-    if room_map[player_y][player_x] == 48: # toxic floor
-        deplete_energy(1)
-
     if player_direction == "right" and player_frame > 0:
        player_offset_x = -1 + (0.25 * player_frame)
     if player_direction == "left" and player_frame > 0:
@@ -490,13 +487,14 @@ def draw():
         for x in range(room_width):
             if room_map[y][x] != 255:
                 image_to_draw = objects[room_map[y][x]][0]
-                screen.blit(image_to_draw,(top_left_x + (x*30),
-                top_left_y + (y*30) - image_to_draw.get_height()))
+                screen.blit(image_to_draw,
+                    (top_left_x + (x*30), 
+                     top_left_y + (y*30) - image_to_draw.get_height()))
         if player_y == y:
             image_to_draw = PLAYER[player_direction][player_frame]
             screen.blit(image_to_draw,
                         (top_left_x + (player_x*30)+(player_offset_x*30),
-                        top_left_y + (player_offset_y*30)+(player_offset_y*30)
+                        top_left_y + (player_y*30)+(player_offset_y*30)
                         - image_to_draw.get_height()))
 
                     # def movement():
