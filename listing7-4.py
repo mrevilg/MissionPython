@@ -411,6 +411,64 @@ def game_loop():
      if game_over:
           return
 
+     if player_frame > 0:
+        player_frame += 1
+        time.sleep(0.05) #0.05
+        if player_frame == 5:
+            player_frame = 0
+            player_offset_x = 0
+            player_offset_y = 0
+
+# save player's current position
+     old_player_x = player_x
+     old_player_y = player_y
+
+# move if key is pressed
+     if player_frame == 0:
+        if keyboard.right:
+            from_player_x = player_x
+            from_player_y = player_y
+            player_x += 1
+            player_direction = "right"
+            player_frame = 1
+        elif keyboard.left: #elif stops player making diagonal movements
+            from_player_x = player_x
+            from_player_y = player_y
+            player_x -= 1
+            player_direction = "left"
+            player_frame = 1
+        elif keyboard.up:
+            from_player_x = player_x
+            from_player_y = player_y
+            player_y -= 1
+            player_direction = "up"
+            player_frame = 1
+        elif keyboard.down:
+            from_player_x = player_x
+            from_player_y = player_y
+            player_y += 1
+            player_direction = "down"
+            player_frame = 1        
+
+  # If the player is standing somewhere they shouldn't, move them back.
+     if room_map[player_y][player_x] not in items_player_may_stand_on: #\ 
+    #           or hazard_map[player_y][player_x] != 0:
+        player_x = old_player_x
+        player_y = old_player_y
+        player_frame = 0
+
+     if room_map[player_y][player_x] == 48: # toxic floor
+        deplete_energy(1)
+
+     if player_direction == "right" and player_frame > 0:
+        player_offset_x = -1 + (0.25 * player_frame)
+     if player_direction == "left" and player_frame > 0:
+        player_offset_x = 1 - (0.25 * player_frame)
+     if player_direction == "up" and player_frame > 0:
+        player_offset_y = 1 - (0.25 * player_frame)
+     if player_direction == "down" and player_frame > 0:
+        player_offset_y = -1 + (0.25 * player_frame)
+
 
 
 
