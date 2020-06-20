@@ -402,11 +402,14 @@ def generate_map(): # This makes the map of the current room using room, scenery
 
 def game_loop():
      global player_x, player_y, current_room
-     global
-     global
-     global
-     global
-     global
+     global from_player_x, from_player_y
+     global player_image, player_image_shdaow
+     global selected_item, item_carrying, energy
+     global player_offset_x, player_offset_y
+     global player_frame, player_direction
+
+     if game_over:
+          return
 
 
 
