@@ -51,7 +51,40 @@ player_frame = 0
 player_image = PLAYER[player_direction][player_frame]
 player_offset_x, player_offset_y = 0, 0
 
+PLAYER_SHADOW = {
+    "left": [images.spacesuit_left_shadow, images.spacesuit_left_1_shadow,
+             images.spacesuit_left_2_shadow, images.spacesuit_left_3_shadow,
+             images.spacesuit_left_3_shadow
+             ],
+    "right": [images.spacesuit_right_shadow, images.spacesuit_right_1_shadow,
+              images.spacesuit_right_2_shadow,
+              images.spacesuit_right_3_shadow, images.spacesuit_right_3_shadow
+              ],
+    "up": [images.spacesuit_back_shadow, images.spacesuit_back_1_shadow,
+           images.spacesuit_back_2_shadow, images.spacesuit_back_3_shadow,
+           images.spacesuit_back_3_shadow
+           ],
+    "down": [images.spacesuit_front_shadow, images.spacesuit_front_1_shadow,
+             images.spacesuit_front_2_shadow, images.spacesuit_front_3_shadow,
+             images.spacesuit_front_3_shadow
+             ]
+    }
 
+player_image_shadow = PLAYER_SHADOW["down"][0]
+
+PILLARS = [
+    images.pillar, images.pillar_95, images.pillar_80,
+    images.pillar_60, images.pillar_50
+    ]
+
+wall_transparency_frame = 0
+
+BLACK = (0, 0, 0)
+BLUE = (0, 155, 255)
+YELLOW = (255, 255, 0)
+WHITE = (255, 255, 255)
+GREEN = (0, 255, 0)
+RED = (128, 0, 0)
 
 #########
 ## MAP ##
