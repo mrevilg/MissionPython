@@ -401,17 +401,17 @@ def generate_map(): # This makes the map of the current room using room, scenery
 ## Game Loop ##
 
 def game_loop():
-     global player_x, player_y, current_room
-     global from_player_x, from_player_y
-     global player_image, player_image_shdaow
-     global selected_item, item_carrying, energy
-     global player_offset_x, player_offset_y
-     global player_frame, player_direction
+    global player_x, player_y, current_room
+    global from_player_x, from_player_y
+    global player_image, player_image_shdaow
+    global selected_item, item_carrying, energy
+    global player_offset_x, player_offset_y
+    global player_frame, player_direction
 
-     if game_over:
+    if game_over:
           return
 
-     if player_frame > 0:
+    if player_frame > 0:
         player_frame += 1
         time.sleep(0.05) #0.05
         if player_frame == 5:
@@ -424,7 +424,7 @@ def game_loop():
      old_player_y = player_y
 
 # move if key is pressed
-     if player_frame == 0:
+    if player_frame == 0:
         if keyboard.right:
             from_player_x = player_x
             from_player_y = player_y
@@ -451,22 +451,22 @@ def game_loop():
             player_frame = 1        
 
   # If the player is standing somewhere they shouldn't, move them back.
-     if room_map[player_y][player_x] not in items_player_may_stand_on: #\ 
+    if room_map[player_y][player_x] not in items_player_may_stand_on: #\ 
     #           or hazard_map[player_y][player_x] != 0:
         player_x = old_player_x
         player_y = old_player_y
         player_frame = 0
 
-     if room_map[player_y][player_x] == 48: # toxic floor
+    if room_map[player_y][player_x] == 48: # toxic floor
         deplete_energy(1)
 
-     if player_direction == "right" and player_frame > 0:
-        player_offset_x = -1 + (0.25 * player_frame)
-     if player_direction == "left" and player_frame > 0:
-        player_offset_x = 1 - (0.25 * player_frame)
-     if player_direction == "up" and player_frame > 0:
-        player_offset_y = 1 - (0.25 * player_frame)
-     if player_direction == "down" and player_frame > 0:
+    if player_direction == "right" and player_frame > 0:
+       player_offset_x = -1 + (0.25 * player_frame)
+    if player_direction == "left" and player_frame > 0:
+       player_offset_x = 1 - (0.25 * player_frame)
+    if player_direction == "up" and player_frame > 0:
+       player_offset_y = 1 - (0.25 * player_frame)
+    if player_direction == "down" and player_frame > 0:
         player_offset_y = -1 + (0.25 * player_frame)
 
 
