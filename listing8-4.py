@@ -550,6 +550,28 @@ def game_loop():
 #############
 ## DISPLAY ##
 #############
+
+def draw_image(image, y, x):
+    screen.blit(
+        image,
+        (top_left_x + (x * TILE_SIZE),
+         top_left_y + (y * TILE_SIZE) - image.get_height())
+        )
+
+def draw_shadow(image, y, x):
+    screen.blit(
+        image,
+        (top_left_x + (x * TILE_SIZE),
+         top_left_y + (y * TILE_SIZE))
+        )
+
+def draw_player():
+    player_image = PLAYER[player_direction][player_frame]
+    draw_image(player_image, player_y + player_offset_y,
+               player_x + player_offset_x)
+    player_image_shadow = PLAYER_SHADOW[player_direction][player_frame]
+    draw_shadow(player_image_shadow, player_y + player_offset_y,
+                player_x + player_offset_x)
         
 ###########
 ## START ##
