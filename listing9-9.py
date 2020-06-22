@@ -825,7 +825,6 @@ def remove_object(item): # Takes item out of inventory
         item_carrying = in_my_pockets[selected_item]
     display_inventory()
 
-
 ###########
 ## START ##
 ###########
