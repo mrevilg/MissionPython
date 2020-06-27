@@ -994,6 +994,23 @@ Rendezvous Sector 13, outside."
             sounds.say_airlock_open.play()
             show_text("The computer tells you the airlock is now open.", 1)    
 
+    for recipe in RECIPES:
+        ingredient1 = recipe[0]
+        ingredient2 = recipe[1]
+        combination = recipe[2]
+        if (item_carrying == ingredient1
+            and item_player_is_on == ingredient2) \
+            or (item_carrying == ingredient2
+                and item_player_is_on == ingredient1):
+            use_message = "You combine " + objects[ingredient1][3] \
+                          + " and " + objects[ingredient2][3] \
+                          + " to make " + objects[combination][3]
+            if item_player_is_on in props.keys(): 
+                props[item_player_is_on][0] = 0 
+                room_map[player_y][player_x] = get_floor_type()
+            in_my_pockets.remove(item_carrying)
+            add_object(combination)
+            sounds.combine.play()
 
     show_text(use_message, 0)
     time.sleep(0.5)
