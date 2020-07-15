@@ -592,18 +592,18 @@ def game_loop():
     if keyboard.space:
         examine_object()
 
-""" ## Teleporter for testing
-## Remove this section for the real game
-    if keyboard.x:
-        current_room = int(input("Enter room number:"))
-        player_x = 2
-        player_y = 2
-        generate_map()
-        start_room()
-        sounds.teleport.play()
-## Teleport section ends """
+    """ ## Teleporter for testing
+    ## Remove this section for the real game
+        if keyboard.x:
+            current_room = int(input("Enter room number:"))
+            player_x = 2
+            player_y = 2
+            generate_map()
+            start_room()
+            sounds.teleport.play()
+    ## Teleport section ends """
 
-  # If the player is standing somewhere they shouldn't, move them back.
+    # If the player is standing somewhere they shouldn't, move them back.
     if room_map[player_y][player_x] not in items_player_may_stand_on or hazard_map[player_y][player_x] != 0:
         player_x = old_player_x
         player_y = old_player_y
@@ -1335,5 +1335,5 @@ clock.schedule_unique(display_inventory, 1)
 clock.schedule_unique(draw_energy_air, 0.5)
 clock.schedule_unique(alarm, 10)
 # A higher number below gives a longer time limit.
-clock.schedule_interval(air_countdown, 11)
-sounds.mission.play() # Intro Music
+clock.schedule_interval(air_countdown, 5)
+sounds.mission.play() #Intro Music
